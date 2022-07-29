@@ -68,8 +68,8 @@ var point = new THREE.PointLight(0xffffff);
 point.position.set(800, 800, 800); //点光源位置
 scene.add(point); //点光源添加到场景中
 
-var axisHelper = new THREE.AxisHelper(2000)
-scene.add(axisHelper)
+// var axisHelper = new THREE.AxisHelper(2000)
+// scene.add(axisHelper)
 
 //太阳平行光
 // var sun = new THREE.DirectionalLight(0xffffff)

@@ -111,6 +111,8 @@ setInterval(() => {
         leftH.rotation.z = Math.PI / 8
         let rightH = scene.getObjectByName('右手')
         rightH.rotation.z = -Math.PI / 8
+        let head = scene.getObjectByName('头部')
+        head.rotation.y = -Math.PI / 8
         a = false
     } else {
         let left = scene.getObjectByName('左腿')
@@ -121,6 +123,8 @@ setInterval(() => {
         leftH.rotation.z = -Math.PI / 8
         let rightH = scene.getObjectByName('右手')
         rightH.rotation.z = Math.PI / 8
+        let head = scene.getObjectByName('头部')
+        head.rotation.y = Math.PI / 8
         a = true
     }
     renderer.render(scene, camera);

@@ -24,11 +24,11 @@ var scene = new THREE.Scene();
 
 var shape = new THREE.Shape();
 /**四条直线绘制一个矩形轮廓*/
-shape.moveTo(0, 0);//起点
-shape.lineTo(0, 10);//第2点
-shape.lineTo(10, 10);//第3点
-shape.lineTo(10, 0);//第4点
-shape.lineTo(0, 0);//第5点
+// shape.moveTo(0, 0);//起点
+// shape.lineTo(0, 10);//第2点
+// shape.lineTo(10, 10);//第3点
+// shape.lineTo(10, 0);//第4点
+// shape.lineTo(0, 0);//第5点
 /**创建轮廓的扫描轨迹(3D样条曲线)*/
 var curve = new THREE.SplineCurve3([
     new THREE.Vector3(0, 0, 0),
@@ -36,6 +36,7 @@ var curve = new THREE.SplineCurve3([
     new THREE.Vector3(0, 100, 0),
     new THREE.Vector3(50, 130, 0)
 ]);
+shape.absarc(0, 0, 5, 0, Math.PI * 2);
 var curve2 = new THREE.SplineCurve3([
     new THREE.Vector3(70, 0, 0),
     new THREE.Vector3(70, 140, 0),
